@@ -3,14 +3,22 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Agency from './pages/Agency'
+import Stairs from './components/common/Stairs'
+import Navbar from './components/Navigation/Navbar'
+import NavBarFull from './components/Navigation/NavBarFull'
 
 const App = () => {
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path='/projects' element={<Projects />} />
-      <Route path='/agency' element={<Agency />} />
-    </Routes>
+    <div>
+      {/* <Navbar /> */}
+      <NavBarFull />
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/agence' element={<Agency />} />
+      </Routes> */}
+    </div>
   )
 }
 
